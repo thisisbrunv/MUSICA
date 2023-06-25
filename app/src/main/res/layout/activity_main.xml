@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#8C6CC5"
+    tools:context=".MainActivity"
+    android:id="@+id/linearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gotoArtists"
+                android:layout_width="60dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:text="Artists"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp" />
+
+            <Button
+                android:id="@+id/gotoPlaylists"
+                android:layout_width="60dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:text="Playlists"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp" />
+
+            <Button
+                android:id="@+id/gotoAlbums"
+                android:layout_width="60dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:text="Albums"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp" />
+
+            <Button
+                android:id="@+id/gotoMusics"
+                android:layout_width="60dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:text="Musics"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp" />
+
+                <Button
+                    android:id="@+id/gotoBanco"
+                    android:layout_width="60dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:text="Banco"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.BancoDeDadosLocal2022.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.BancoDeDadosLocal2022.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+</LinearLayout>
+
